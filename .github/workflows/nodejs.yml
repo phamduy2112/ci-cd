@@ -5,14 +5,12 @@ on:
     branches: 
       - main
 
-
 jobs:
   nodejs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      # nếu không sài uses run: git clone https://github.com/your-name/your-repo.git
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
